@@ -131,11 +131,9 @@
     /*OFFER--------------------------------------------------*/
 
     .offer {
-      display: table-row;
       width: 100%;
       font-size: 0;
       text-align: center;
-      background-color: #333;
     }
 
     .offer span, .offer a {
@@ -146,9 +144,9 @@
       opacity: 0.6;
     }
 
-    .offer a {
-      opacity: 1;
-    }
+		.offer a {
+			opacity: 1;
+		}
 
 
     /*HEADER-------------------------------------------------*/
@@ -184,7 +182,7 @@
       height: 35px;
       background-color: transparent;
       border: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Cpath fill='%23ef6129' d='M8 6h42v46H8z'/%3E%3Cg fill='%23ebba16'%3E%3Cpath d='M50 10h4v38h-4zM4 10h4v38H4z'/%3E%3C/g%3E%3Cg fill='%23efce4a'%3E%3Cpath d='M54 14h4v30h-4zM0 14h4v30H0z'/%3E%3C/g%3E%3Cpath d='M43.649 12.24a1 1 0 0 0-.805-.228l-19 3A1 1 0 0 0 23 16v19.68A6.765 6.765 0 0 0 18.5 34c-3.584 0-6.5 2.691-6.5 6s2.916 6 6.5 6c3.533 0 6.411-2.617 6.492-5.861.001-.013.008-.024.008-.037V22.854l17-2.684v9.511C40.831 28.642 39.246 28 37.5 28c-3.584 0-6.5 2.691-6.5 6s2.916 6 6.5 6 6.5-2.691 6.5-6V13a.999.999 0 0 0-.351-.76z' fill='%23fff'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Cpath fill='%231CA46A' d='M8 6h42v46H8z'/%3E%3Cg fill='%2330db92'%3E%3Cpath d='M50 10h4v38h-4zM4 10h4v38H4z'/%3E%3C/g%3E%3Cg fill='%2330db92'%3E%3Cpath d='M54 14h4v30h-4zM0 14h4v30H0z'/%3E%3C/g%3E%3Cpath d='M43.649 12.24a1 1 0 0 0-.805-.228l-19 3A1 1 0 0 0 23 16v19.68A6.765 6.765 0 0 0 18.5 34c-3.584 0-6.5 2.691-6.5 6s2.916 6 6.5 6c3.533 0 6.411-2.617 6.492-5.861.001-.013.008-.024.008-.037V22.854l17-2.684v9.511C40.831 28.642 39.246 28 37.5 28c-3.584 0-6.5 2.691-6.5 6s2.916 6 6.5 6 6.5-2.691 6.5-6V13a.999.999 0 0 0-.351-.76z' fill='%23fff'/%3E%3C/svg%3E");
       -webkit-background-size: contain;
       background-size: contain;
       background-position: center;
@@ -200,10 +198,10 @@
 
     .header .name span {
       font-family: 'Rubik', sans-serif;
-      font-size: 20px;
+			font-size: 10px;
+			line-height: 14px;
       font-weight: bold;
       color: #e1e1e1;
-      line-height: 40px;
       text-align: center;
       text-transform: uppercase;
     }
@@ -233,21 +231,18 @@
       height: 100%;
     }
 
-    .main .wrapper {
-      height: 100%;
-    }
-
-    .main .wrapper > .inner {
+    .main > .inner {
       position: relative;
       height: 100%;
-      -webkit-filter: blur(3px);
-      filter: blur(4px);
+			overflow: hidden;
     }
 
     .main .track {
       width: 100%;
       text-align: center;
       padding: 20px 10px;
+			-webkit-filter: blur(3px);
+			filter: blur(4px);
     }
 
     .main .track .logo {
@@ -293,7 +288,7 @@
       font-size: 20px;
       font-weight: bold;
       line-height: 20px;
-      color: #ef6129;
+      color: #1CA46A;
     }
 
     .main .track .title {
@@ -303,7 +298,7 @@
       line-height: 20px;
     }
 
-    @media screen and (max-height: 500px) {
+    @media screen and (max-height: 490px) {
       .main .inner {
         padding: 0;
       }
@@ -352,6 +347,8 @@
     .main .track-info-btn {
       display: none;
       text-align: center;
+			-webkit-filter: blur(3px);
+			filter: blur(4px);
     }
 
     .main .track-info-btn button {
@@ -362,13 +359,15 @@
       line-height: 16px;
       color: #fff;
       border: none;
-      background-color: #ef6129;
+      background-color: #1CA46A;
     }
 
     .main .track-info {
       width: 90%;
       margin: 0 auto 20px;
       border-collapse: collapse;
+			-webkit-filter: blur(3px);
+			filter: blur(4px);
     }
 
     .main .track-info td {
@@ -383,7 +382,7 @@
       background-color: #ddd;
     }
 
-    @media screen and (max-height: 660px) {
+    @media screen and (max-height: 655px) {
       .main .track-info {
         display: none;
       }
@@ -393,7 +392,7 @@
       }
     }
 
-    @media screen and (max-height: 555px) {
+    @media screen and (max-height: 550px) {
       .main .track-info-btn {
         display: none;
       }
@@ -406,6 +405,8 @@
     .rating {
       display: table;
       margin: 0 auto;
+			-webkit-filter: blur(3px);
+			filter: blur(4px);
     }
 
     .rating .inner {
@@ -453,7 +454,7 @@
       line-height: 30px;
     }
 
-    @media screen and (max-height: 720px) {
+    @media screen and (max-height: 710px) {
       .rating {
         display: none;
       }
@@ -489,7 +490,7 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 32px;
-      color: #ef6129;
+      color: #1CA46A;
       text-shadow: 0 0 10px #fff;
     }
 
@@ -498,22 +499,32 @@
       display: inline-block;
       width: 90vw;
       height: 20vh;
-      text-decoration: none;
-      text-align: center;
-      background-color: #ef6129;
+      background-color: #1CA46A;
       -webkit-border-radius: 20px;
       border-radius: 20px;
     }
 
-    .main .btn > span {
+		.main .btn > a {
+			position: relative;
+			display: inline-block;
+			width: 50%;
+			height: 20vh;
+			text-decoration: none;
+			text-align: center;
+			-webkit-border-radius: 20px;
+			border-radius: 20px;
+		}
+
+    .main .btn > a span {
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+			margin-left: -12px;
       font-family: 'Open Sans', sans-serif;
-      font-size: 32px;
+      font-size: 20px;
       font-weight: bold;
       line-height: 32px;
       color: #FFFFFF;
@@ -521,7 +532,7 @@
       text-shadow: 0 4px 7px rgba(0, 0, 0, 0.31);
     }
 
-    .main .btn > span::after {
+    .main .btn > a span::after {
       position: absolute;
       top: 50%;
       left: 100%;
@@ -530,8 +541,8 @@
       transform: translate(0, -50%);
       content: '';
       display: block;
-      width: 25px;
-      height: 27px;
+      width: 15px;
+      height: 17px;
       margin-left: 9px;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='443.307' height='443.306'%3E%3Cpath d='M415.934 212.799L36.788 2.097C32.411-.377 28.65-.661 25.51 1.242c-3.14 1.902-4.708 5.328-4.708 10.276V431.78c0 4.952 1.569 8.381 4.708 10.284 3.14 1.902 6.901 1.622 11.278-.855l379.146-210.703c4.381-2.478 6.571-5.434 6.571-8.856 0-3.426-2.191-6.376-6.571-8.851z' fill='%23fff'/%3E%3C/svg%3E");
       background-position: center;
@@ -540,19 +551,41 @@
       background-repeat: no-repeat;
     }
 
-    @media screen and (max-height: 260px) and (orientation: landscape) {
-      .main .wrapper {
-        position: relative;
-      }
-    }
+		.main .btn > a:nth-child(2) span::after {
+			width: 20px;
+			height: 20px;
+			background-image: url('./download.png');
+		}
 
-    @media screen and (max-height: 590px) {
+		.main .btn > a:nth-child(2)::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			display: block;
+			width: 1px;
+			height: 32px;
+			background-color: #fff;
+		}
+
+		@media screen and (max-height: 220px) and (orientation: landscape) {
+			.main .btn-wrapper {
+				top: auto;
+				bottom: 40px;
+				-webkit-transform: translate(0, -29px);
+				-ms-transform: translate(0, -29px);
+				transform: translate(0, -29px);
+			}
+		}
+
+    @media screen and (max-height: 550px) {
       .main .heading {
         margin-bottom: 35px;
       }
     }
 
-    @media screen and (max-height: 500px) {
+    @media screen and (max-height: 470px) {
       .main .heading {
         display: none;
       }
@@ -676,7 +709,7 @@
       left: 0;
       width: 60%;
       height: 100%;
-      background-color: #ef6129;
+      background-color: #1CA46A;
     }
 
     .player .bottom {
@@ -701,7 +734,7 @@
       top: 0;
       width: 40%;
       height: 100%;
-      background-color: #ef6129;
+      background-color: #1CA46A;
     }
 
     .player .bottom .current::after {
@@ -720,17 +753,27 @@
       background-color: #fff;
     }
 
-    @media screen and (orientation: landscape) {
-      .player .inner {
-        display: inline-block;
-        width: 60%;
-      }
+		@media screen and (max-height: 420px) {
+			.player .inner {
+				display: inline-block;
+				width: 50%;
+			}
 
-      .player .bottom {
-        display: inline-block;
-        width: 40%;
-      }
-    }
+			.player .bottom {
+				display: inline-block;
+				width: 50%;
+			}
+
+			.player .inner .top > .volume {
+				display: none;
+			}
+		}
+
+		@media screen and (max-height: 330px) {
+			.player {
+				display: none;
+			}
+		}
 
 
     /*FOOTER--------------------------------------------------*/
@@ -762,17 +805,17 @@
 
 
 <body>
-  <div class="offer">
-    <span>Нажатием на кнопку "Слушать" Вы подтверждаете свое согласие с подключением подписки SUBNAME и <a href="http://podpiski.megafon.ru/col/mds4/web/jsp/files/oferta.pdf">Условиями предоставления подписки</a>. Стоимость подписки SUBPRICE.
-ACCOUNT. Услуга предоставляется Контент-провайдером PROVIDER.</span>
-  </div>
   <div class="header">
+		<div class="offer">
+			<span>Нажатием на кнопку "Смотреть" Вы подтверждаете свое согласие с подключением подписки SUBNAME и <a
+				href="http://podpiski.megafon.ru/col/mds4/web/jsp/files/oferta.pdf">Условиями предоставления подписки</a>. Стоимость подписки SUBPRICE.ACCOUNT. Услуга предоставляется Контент-провайдером PROVIDER.</span>
+		</div>
     <div class="inner">
-      <div class="logo">
-        <button disabled></button>
-      </div>
+			<div class="logo">
+				<button></button>
+			</div>
       <div class="name">
-        <span>Музыка</span>
+        <span>Музыкаонлайн</span>
       </div>
       <div class="plus18">
         <div></div>
@@ -781,97 +824,91 @@ ACCOUNT. Услуга предоставляется Контент-провай
   </div>
 
   <div class="main">
-    <div class="wrapper">
-      <div class="inner">
-        <div class="track">
-          <div class="logo"></div>
-          <div class="title-wrapper">
-            <p class="band">Foo Fighters</p>
-            <p class="title">Word Forward</p>
+    <div class="inner">
+      <div class="track">
+        <div class="logo"></div>
+        <div class="title-wrapper">
+          <p class="band">Foo Fighters</p>
+          <p class="title">Word Forward</p>
+        </div>
+      </div>
+      <div class="track-info-btn">
+        <button disabled>Информация о треке</button>
+      </div>
+      <table class="track-info">
+        <tr><td>Длительность</td><td>03:52</td></tr>
+        <tr><td>Размер(качество)</td><td>2Mb(320Kbps)</td></tr>
+        <tr><td>Жанр</td><td>Рок</td></tr>
+        <tr><td>Прослушано</td><td>182 раз(а)</td></tr>
+      </table>
+      <div class="rating">
+        <div class="inner">
+          <div class="like-wrapper">
+            <button disabled></button>
+          </div>
+          <div class="total">
+            <span>150</span>
+          </div>
+          <div class="dislike-wrapper">
+            <button disabled></button>
           </div>
         </div>
-        <div class="track-info-btn">
-          <button disabled>Информация о треке</button>
-        </div>
-        <table class="track-info">
-          <tr>
-            <td>Длительность</td>
-            <td>03:52</td>
-          </tr>
-          <tr>
-            <td>Размер(качество)</td>
-            <td>2Mb(320Kbps)</td>
-          </tr>
-          <tr>
-            <td>Жанр</td>
-            <td>Рок</td>
-          </tr>
-          <tr>
-            <td>Прослушано</td>
-            <td>182 раз(а)</td>
-          </tr>
-        </table>
-        <div class="rating">
-          <div class="inner">
-            <div class="like-wrapper">
-              <button disabled></button>
+      </div>
+      <div class="player">
+        <div class="inner">
+          <div class="top">
+            <div>
+              <button class="prev" disabled></button>
             </div>
-            <div class="total">
-              <span>150</span>
+            <div>
+              <button class="play" disabled></button>
             </div>
-            <div class="dislike-wrapper">
-              <button disabled></button>
+            <div>
+              <button class="next" disabled></button>
+            </div>
+            <div class="volume">
+              <div class="icon"></div>
+              <div class="line"></div>
             </div>
           </div>
         </div>
-        <div class="player">
-          <div class="inner">
-            <div class="top">
-              <div>
-                <button class="prev" disabled></button>
-              </div>
-              <div>
-                <button class="play" disabled></button>
-              </div>
-              <div>
-                <button class="next" disabled></button>
-              </div>
-              <div class="volume">
-                <div class="icon"></div>
-                <div class="line"></div>
-              </div>
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="playhead">
-              <div class="line">
-                <div class="current"></div>
-              </div>
+        <div class="bottom">
+          <div class="playhead">
+            <div class="line">
+              <div class="current"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="btn-wrapper" id="btn-wrapper">
-        <div class="heading">
-          <p>Приятного прослушивания</p>
-        </div>
-        <a class="btn" id="btn" href="#<TARIF_YES_URL>">
-        <span>
-          Слушать
-        </span>
+    </div>
+    <div class="btn-wrapper" id="btn-wrapper">
+      <div class="heading">
+        <p>Приятного прослушивания</p>
+      </div>
+			<div class="btn">
+				<a href="#<TARIF_YES_URL>">
+					<span>
+						Cлушать
+					</span>
+				</a>
+				<a href="#<TARIF_YES_URL>">
+					<span>
+						Скачать
+					</span>
+				</a>
+			</div>
+      <div class="cancel">
+        <a href="#<TARIF_NO_URL>">
+          <span>Отмена</span>
         </a>
-        <div class="cancel">
-          <a href="#<TARIF_NO_URL>">
-            <span>Отмена</span>
-          </a>
-        </div>
       </div>
     </div>
   </div>
 
   <div class="rules" id="footer">
     <div class="inner">
-      <p>Информация для абонентов - тел. 8 800 500-25-43 (бесплатно в домашнем регионе) | <a href="ВАША ССЫЛКА НА ПРАВИЛА ПОДПИСКИ">Правила подписки поставщика услуг</a> | <a href="#<LK_LINK_URL>">Личный кабинет</a></p>
+			<p>Информация для абонентов - тел. 8 800 500-25-43 (бесплатно в домашнем регионе) | <a href="ВАША ССЫЛКА НА ПРАВИЛА
+ПОДПИСКИ">Правила подписки поставщика услуг</a> | <a href="#<LK_LINK_URL>">Личный кабинет</a></p>
     </div>
   </div>
 
